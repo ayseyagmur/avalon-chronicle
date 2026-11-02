@@ -146,7 +146,7 @@ font-family:"EB Garamond",Georgia,serif;background:var(--parchment);color:var(--
   <div class="mv-log">
     <div class="mv-log-head"><h2>The Chronicle</h2><div class="r"></div></div>
     <div class="mv-carousel" id="mvCarousel">
-      <div class="mv-slide"><p style="text-align:center;color:var(--ink-soft);font-style:italic">Loading latest chronicles…</p></div>
+      <div class="mv-slide"><p style="text-align:center;color:var(--ink-soft);font-style:italic">Loading latest chronicle…</p></div>
     </div>
     <div class="mv-carousel-dots" id="mvDots"></div>
   </div>
@@ -251,7 +251,7 @@ font-family:"EB Garamond",Georgia,serif;background:var(--parchment);color:var(--
 
   db.collection('blogs').orderBy('createdAt', 'desc').limit(3).get().then(function(snapshot){
     if (snapshot.empty) {
-      carousel.innerHTML = '<div class="mv-slide"><p style="text-align:center;color:var(--ink-soft);font-style:italic">No chronicles yet.</p></div>';
+      carousel.innerHTML = '<div class="mv-slide"><p style="text-align:center;color:var(--ink-soft);font-style:italic">No chronicle yet.</p></div>';
       if(dotsEl) dotsEl.innerHTML = '';
       return;
     }
